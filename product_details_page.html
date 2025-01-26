@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+
+        .product-name {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #6c757d;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #dc3545;
+            /* Red color for original price */
+            margin-right: 0.5rem;
+        }
+
+        .discount-price {
+            color: #28a745;
+            /* Green color for discount price */
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem;
+        }
+
+        .footer a {
+            color: white;
+            margin-right: 1rem;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">R-Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Product Image with Carousel -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <img src="https://m.media-amazon.com/images/I/71M3KU4vqtL._AC_UF1000,1000_QL80_.jpg"
+                                class="d-block w-50 mx-auto" alt="Product Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://m.media-amazon.com/images/I/61nArnYltFL._AC_UF1000,1000_QL80_.jpg"
+                                class="d-block w-50 mx-auto" alt="Product Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://m.media-amazon.com/images/I/71cJJQ0zUtL.jpg" class="d-block w-50 mx-auto"
+                                alt="Product Image 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Product Description -->
+            <div class="col-lg-6">
+                <h1 class="product-name">Smart Watch for Men Women</h1>
+                <p class="tagline">1.96" HD Full Touch Screen, Make Call/Answer Call, 220+ Watch Faces, Custom Dial,
+                    pedometer, sleep monitor, breathing training, music control, camera</p>
+                <p class="price">
+                    <span class="original-price">$249.99</span>
+                    <span class="discount-price">$199.99</span>
+                </p>
+
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Operating system: <strong>Android, iOS</strong></li>
+                    <li>Memory storage: <strong>1 GB</strong></li>
+                    <li>Battery capacity: <strong>3E+2 Milliamp Hours</strong></li>
+                    <li>Connectivity technology: <strong>Bluetooth</strong></li>
+                    <li>Brand: <strong>Jugeman</strong></li>
+
+                </ul>
+                <h4>Technical Specifications:</h4>
+                <p>Bluetooth 5.3 Smart Watch with Make/ Answer Call and Intelligent Notification : The smart watches for
+                    men adopt
+                    bluetooth 5.3 version for a faster and more stable connection between your fitness watch and
+                    smartphone. With the
+                    built-in microphone and Hi-Fi speaker, stay cnnected seamlessly with using smart watch to
+                    make/answer Bluetooth calls,
+                    keeping you in touch with family or friends anytime, anywhere. Get all your messages and
+                    notifications (Facebook,
+                    Twitter, WhatsApp, Instagram, Messenger, Linkedin,Skype etc.) sent straight to your android smart
+                    watch with intuitive
+                    customizable vibrations.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About the Product -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">About the Product</h2>
+        <p>The smart watches for men adopt bluetooth 5.3 version for a faster and more stable connection between your
+            fitness watch and smartphone. With the built-in microphone and Hi-Fi speaker, stay cnnected seamlessly with
+            using smart watch to make/answer Bluetooth calls, keeping you in touch with family or friends anytime,
+            anywhere. Get all your messages and watch with intuitive customizable vibrations.</p>
+        <p>The smart watches for men adopt bluetooth 5.3 version for a faster and more stable connection between your
+            fitness watch and smartphone. With the built-in microphone and Hi-Fi speaker, stay cnnected seamlessly with
+            using smart watch to make/answer Bluetooth calls, keeping you in touch with family or friends anytime,
+            anywhere. Get all your messages and watch with intuitive customizable vibrations.</p>
+
+            <p>1.96 inch HD Touch Screen and 220+ Personalized Watch Face: Jugeman smart watch adopt 1.96”TFT HD color display screen
+            with a 320*385 resolution and 4 levels of brightness offering excellent image quality, high sensitivity touch. This
+            fitness trackers personalized interactive interface can easily catch your eyes and follow your heart, set your personal
+            picture to customize watch face (220+ Personalized Watch Face). Meanwhile, smartwatch has a novel design concept that
+            gives it a stylish look while being ultra-lightweight, making your wrist feel comfortable and relaxed.
+            24/7 Heart Rate and Sleep Monitor: Y66 smart watch for women have automatically recognize the heart rate zone and use
+            advance sensor technology, which can be used as a real-time monitor to monitor your Heart Rate 24 hours a day, maintain
+            your health through data analysis. fitness tracker monitor your sleep, and analyze your sleep quality through deep
+            sleep, light sleep and wake up/fall asleep time, and can view the sleep records of the past 1 year. Help you develop a
+            healthier lifestyle. Sleep Monitor Time: (10pm-8am)
+            113+ Sports Modes and IP68 Waterproof : Achieve your fitness goals with over 113 sports modes tailored to your workouts.
+            Watch for men tracks Calories burned, Step count, Exercise Time, and Distance for a wide range of activities. Plus,
+            Activity trackers and smartwatches are built to withstand water up to IP68, You can wear the watch to wash hands, free
+            from worrying about water damage, meeting your daily requirements better.(Note: Not suitable for swimming and hot tubs)
+            More Functions and Long Battery Life: This sport smart watch has many daily practical functions, including an alarm
+            clock, stopwatch, timer, music control, weather forecast, sedentary reminder, find phone, calendar, camera control, and
+            other features. Equipped with high-efficiency chip and large 300mAh battery capacity, the step counter watch can
+            identify the using status and allocate energy consumption reasonably under the intelligent power-saving algorithm, after
+            being charged for 1.5 hours, it can work for 7 days or be standby for 30 days.</p>
+
+    </div>
+
+    <!-- Related Products -->
+     <div class="container my-5">
+        <h2>Related Products</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top p-4"
+                            src="https://m.media-amazon.com/images/I/51smef8wGiL._AC_SX679_.jpg"
+                            alt="Product Image 1"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Fitness Smart Watch Band Fitness Watch Waterproof Smart Watch D18</a>
+                        </h4>
+                        <h5>$199.99</h5>
+                        <p class="card-text">Smart Watch for Men Women</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">&#9733; &#9734;</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top p-4"
+                            src="https://m.media-amazon.com/images/I/51nxffrqNIL._AC_SX679_.jpg"
+                            alt="Product Image 1"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Suxdlan Smart Watch Blood Pressure Heart Rate Detection Smart Fitnes</a>
+                        </h4>
+                        <h5>$199.99</h5>
+                        <p class="card-text">Smart Watch for Men Women</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">&#9733; &#9734;</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top p-4"
+                            src="https://m.media-amazon.com/images/I/51IbFsCR1gL.__AC_SY445_SX342_QL70_ML2_.jpg"
+                            alt="Product Image 1"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">HoveeLuty Smart Watch Bluetooth Smart Bracelet 116plus Phone Fitness Watch</a>
+                        </h4>
+                        <h5>$199.99</h5>
+                        <p class="card-text">Smart Watch for Men Women</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">&#9733; &#9734;</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top p-4"
+                            src="https://m.media-amazon.com/images/I/514lHJl+RML._AC_SX679_.jpg"
+                            alt="Product Image 1"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">AZIDWERYQ Kids Smart Watch Phone Children Bracelet Blue</a>
+                        </h4>
+                        <h5>$199.99</h5>
+                        <p class="card-text">Smart Watch for Men Women</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">&#9733; &#9734;</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+    <!-- Footer -->
+    <div class="footer text-center">
+        <p>Follow us on:</p>
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Twitter</a>
+        <a href="#" target="_blank">Instagram</a>
+        <p>&copy; 2025 BrandName. All Rights Reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
